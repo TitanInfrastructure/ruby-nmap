@@ -4,6 +4,7 @@
 * [Issues](https://github.com/sophsec/ruby-nmap/issues)
 * [Documentation](http://rubydoc.info/gems/ruby-nmap/frames)
 * [Email](mailto:postmodern.mod3 at gmail.com)
+* [![Build Status](https://travis-ci.org/sophsec/ruby-nmap.svg)](https://travis-ci.org/sophsec/ruby-nmap)
 
 ## Description
 
@@ -71,6 +72,7 @@ Print NSE script output from an XML scan file:
 
 ## Requirements
 
+* [ruby] >= 2.0.0
 * [nmap] >= 5.00
 * [nokogiri] ~> 1.3
 * [rprogram] ~> 0.3
@@ -86,5 +88,6 @@ Copyright (c) 2009-2014 Postmodern
 See {file:LICENSE.txt} for license information.
 
 [nmap]: http://www.insecure.org/
+[ruby]: https://www.ruby-lang.org/
 [nokogiri]: http://nokogiri.rubyforge.org/
 [rprogram]: https://github.com/postmodern/rprogram#readme

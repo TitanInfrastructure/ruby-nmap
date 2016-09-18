@@ -1,3 +1,26 @@
+### 0.9.1 / 2016-07-18
+
+* Fixed {Nmap::Host#ipv6} when there are no `ipv6` type addresses.
+* Fixed {Nmap::OS#fingerprint} when there is no `osfingerprint` element.
+
+### 0.9.0 / 2016-07-14
+
+* Added {Nmap::Address#vendor}.
+* Added {Nmap::Service#to_s}.
+* Added {Nmap::HostScript}.
+* Added {Nmap::Prescript}.
+* Added {Nmap::Postscript}.
+* Added {Nmap::XML#prescript}.
+* Added {Nmap::XML#postscript}.
+* Added `Nmap::Task#quiet` (aka `-v0`).
+* `#script_data` methods can now parse arbitrarily nested Arrays/Hashes.
+* Fixed {Nmap::CPE#each_cpe} to only match child `cpe` elements, not all
+  `cpe` elements within the document.
+* Changed {Nmap::Service#to_s} to output product/version only if both are
+  present.
+* Changed `Nmap::Task#skip_discovery` to use `-Pn` instead of `-PN`, which was
+  deprecated in nmap >= 7.00.
+
 ### 0.8.0 / 2014-04-16
 
 * Added {Nmap::XML#each_down_host}.
@@ -94,7 +117,7 @@
 ### 0.3.0 / 2010-11-08
 
 * Added {Nmap::Host#scripts}.
-* Added {Nmap::Port#scripts}.
+* Added {Nmap::Scripts#scripts Nmap::Port#scripts}.
 
 ### 0.2.0 / 2010-10-29
 
